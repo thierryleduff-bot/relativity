@@ -1,0 +1,51 @@
+Auteur, Direction du projet, arbitrages et tests : Thierry Le Duff
+Licence : CC BY-SA 4.0
+Version : 0,8b (2026)
+
+Ce projet est une vulgarisation. 
+Malgré tout le soin apporté, des erreurs peuvent subsister. En cas de doute, référez-vous toujours aux sources originales.(Si vous trouvez une erreur, c'est probablement de la faute de l'IA. Mais vérifiez quand même, on ne sait jamais :-) 
+
+
+Un travail essentiellement IA conversationnelles sous contrôles humains : 
+- Design : Gemini (architecture et objets) & DeepSeek (objets)
+- Code JS : DeepSeek v4.0
+- Recherches & concept : DeepSeek V4.0
+- Consultant pédagogie et rigueur : Copilot (GPT 5.6)
+- Débuscage de bugs : Vibe Code
+
+Images Wikimedia Commons :
+- Aristote : Photographie par Eric Gaba (Sting), sous licence CC BY-SA 2.5, via Wikimedia Commons.
+- Nicolas Copernic : Peinture anonyme (vers 1580), Domaine public, via Wikimedia Commons.
+- Albert Einstein : Photographie par Ferdinand Schmutzer (1921), Domaine public, via Wikimedia Commons.
+- Galilée : Peinture par Justus Sustermans (entre 1636 et 1640), Domaine public, via Wikimedia Commons.
+- Johannes Kepler : Peinture par August Köhler (1910), Domaine public, via Wikimedia Commons.
+- Hermann Minkowski : Photographie (1909), Domaine public, via Wikimedia Commons.
+- Isaac Newton : Peinture par Godfrey Kneller (1689), Domaine public, via Wikimedia Commons.
+- Sagittarius A* : Image par la Collaboration EHT (Event Horizon Telescope), sous licence CC BY 4.0, via Wikimedia Commons.
+
+---------------------------------------------------
+
+Author, Project Direction, arbitration and testing: Thierry Le Duff
+License: CC BY-SA 4.0
+Version: 0.8b (2026)
+
+This project is a popularization. 
+Despite all the care taken, errors may remain. In case of doubt, always refer to the original sources. (If you find an error, it is probably the AI's fault. But check anyway, you never know :-) 
+
+
+A work essentially conversational AIs under human controls : 
+- Design: Gemini (architecture and objects) & DeepSeek (objects)
+- JS Code: DeepSeek v4.0
+- Research & concept: DeepSeek V4.0
+- Pedagogy and rigor consultant: Copilot (GPT 5.6)
+- Debug : Vibe Code
+
+Wikimedia Commons Images:
+- Aristotle: Photograph by Eric Gaba (Sting), under CC BY-SA 2.5 license, via Wikimedia Commons.
+- Nicolaus Copernicus: Anonymous painting (circa 1580), Public domain, via Wikimedia Commons.
+- Albert Einstein: Photograph by Ferdinand Schmutzer (1921), Public domain, via Wikimedia Commons.
+- Galileo: Painting by Justus Sustermans (between 1636 and 1640), Public domain, via Wikimedia Commons.
+- Johannes Kepler: Painting by August Köhler (1910), Public domain, via Wikimedia Commons.
+- Hermann Minkowski: Photograph (1909), Public domain, via Wikimedia Commons.
+- Isaac Newton: Painting by Godfrey Kneller (1689), Public domain, via Wikimedia Commons.
+- Sagittarius A*: Image by the EHT Collaboration (Event Horizon Telescope), under CC BY 4.0 license, via Wikimedia Commons.

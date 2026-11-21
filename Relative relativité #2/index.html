@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La relativité relativisée</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="app">
+        <!-- Header avec les 14 onglets répartis sur 2 lignes -->
+        <header id="top-bar">
+            <nav id="tabs-container">
+                <!-- Ligne 1 : Prologue (1-2) + RR (3-7) -->
+                <div class="tabs-row">
+                    <button class="tab-btn tab-prologue" data-stage="1" title="1. Le Monde d'avant">1. Monde d'avant</button>
+                    <button class="tab-btn tab-prologue" data-stage="2" title="2. Le Mystère de la lumière">2. Mystère lumière</button>
+                    
+                    <button class="tab-btn tab-rr group-start" data-stage="3" title="3. Le Train de Lumière">3. Train de lumière</button>
+                    <button class="tab-btn tab-rr" data-stage="4" title="4. La Contraction">4. Contraction</button>
+                    <button class="tab-btn tab-rr" data-stage="5" title="5. La Simultanéité">5. Simultanéité</button>
+                    <button class="tab-btn tab-rr" data-stage="6" title="6. Les Jumeaux">6. Jumeaux</button>
+                    <button class="tab-btn tab-rr" data-stage="7" title="7. Lorentz / E=mc²">7. Lorentz/E=mc²</button>
+                </div>
+
+                <!-- Ligne 2 : RG (8-12) + Quantique (13) + Épilogue (14) -->
+                <div class="tabs-row">
+                    <button class="tab-btn tab-rg" data-stage="8" title="8. L'Ascenseur d'Einstein">8. Ascenseur</button>
+                    <button class="tab-btn tab-rg" data-stage="9" title="9. La Courbure de l'espace-temps">9. Courbure</button>
+                    <button class="tab-btn tab-rg" data-stage="10" title="10. Le Puits gravitationnel">10. Puits grav.</button>
+                    <button class="tab-btn tab-rg" data-stage="11" title="11. Lentille gravitationnelle">11. Lentille</button>
+                    <button class="tab-btn tab-rg" data-stage="12" title="12. Trou noir">12. Trou noir</button>
+                    
+                    <button class="tab-btn tab-q group-start" data-stage="13" title="13. Frontière quantique">13. Quantique</button>
+                    
+                    <button class="tab-btn tab-epilogue group-start" data-stage="14" title="14. Épilogue">14. Épilogue</button>
+                </div>
+            </nav>
+        </header>
+
+        <main id="main-content">
+            <aside id="sidebar">
+                <div class="sidebar-header">
+                    <div id="chapter-domain" class="domain-badge">PROLOGUE</div>
+                    <h1 id="stage-title">Chargement...</h1>
+					<div id="stage-number" class="stage-number"></div>
+                </div>
+                <div id="narrative-text" class="narrative-body"></div>
+                <div id="controls-container" class="controls-container"></div>
+            </aside>
+
+            <section id="canvas-container">
+                <canvas id="sim-canvas"></canvas>
+                <div id="citation-zone" class="citation-zone"></div>
+            </section>
+        </main>
+
+        <footer id="bottom-bar">
+            <div class="footer-nav">
+                <button id="btn-prev-step" class="tool-btn">← Précédent</button>
+                <span id="step-indicator" class="step-indicator">1 / 1</span>
+                <button id="btn-next-step" class="tool-btn">Suivant →</button>
+            </div>
+            <div class="footer-controls">
+                <button id="btn-replay" class="tool-btn icon-btn" title="Relancer l'animation">↻</button>
+                <button id="btn-sound-toggle" class="tool-btn icon-btn" title="Activer / Désactiver le son">
+                    <span id="sound-icon">🔇</span>
+                </button>
+                <button id="btn-play-pause" class="tool-btn icon-btn" title="Pause / Play">⏸</button>
+                <select id="speed-select" class="speed-select" title="Vitesse de l'animation">
+                    <option value="0.5">x0.5</option>
+                    <option value="1" selected>x1.0</option>
+                    <option value="2">x2.0</option>
+                </select>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Scripts racine -->
+    <script src="audio.js" defer></script>
+    <script src="engine.js" defer></script>
+
+    <!-- Stages (0 à 14) -->
+    <script src="JS/stage-0-bienvenue.js" defer></script>
+    <script src="JS/stage-1-monde-avant.js" defer></script>
+    <script src="JS/stage-1-monde-avant-1.js" defer></script>
+	<script src="JS/stage-1-monde-avant-2.js" defer></script>
+	<script src="JS/stage-1-monde-avant-3.js" defer></script>
+    <script src="JS/stage-2-mystere-lumiere.js" defer></script>
+    <script src="JS/stage-2-mystere-lumiere-1.js" defer></script>
+    <script src="JS/stage-2-mystere-lumiere-2.js" defer></script>
+    <script src="JS/stage-2-mystere-lumiere-3.js" defer></script>
+    
+    <script src="JS/stage-3-train.js" defer></script>
+    <script src="JS/stage-3-train-1.js" defer></script>
+    <script src="JS/stage-3-train-2.js" defer></script>
+    <script src="JS/stage-3-train-3.js" defer></script>
+	<script src="JS/stage-3-train-4.js" defer></script>
+	<script src="JS/stage-3-train-5.js" defer></script>
+    
+    <script src="JS/stage-4-contraction.js" defer></script>
+    <script src="JS/stage-4-contraction-1.js" defer></script>
+    <script src="JS/stage-4-contraction-2.js" defer></script>
+    
+    <script src="JS/stage-5-simultaneite.js" defer></script>
+    <script src="JS/stage-5-simultaneite-1.js" defer></script>
+    
+    <script src="JS/stage-6-jumeaux.js" defer></script>
+    
+    <script src="JS/stage-7-emc2.js" defer></script>
+    <script src="JS/stage-7-emc2-1.js" defer></script>
+    <script src="JS/stage-7-emc2-3.js" defer></script>
+	<script src="JS/stage-7-emc2-4.js" defer></script>
+    <script src="JS/stage-7-emc2-5.js" defer></script>
+    <script src="JS/stage-7-emc2-6.js" defer></script>
+    
+    <script src="JS/stage-8-ascenseur.js" defer></script>
+    <script src="JS/stage-8-ascenseur-1.js" defer></script>
+    
+    <!-- Onglet 9 (Courbure) -->
+    <script src="JS/stage-9-courbure.js" defer></script>
+    <script src="JS/stage-9-courbure-1.js" defer></script>
+    <script src="JS/stage-9-courbure-2.js" defer></script>
+	<script src="JS/stage-9-courbure-3.js" defer></script>
+	<script src="JS/stage-9-courbure-4.js" defer></script>
+
+    <!-- Onglet 10 (Puits gravitationnel) -->
+    <script src="JS/stage-10-puits.js" defer></script>
+
+    <script src="JS/stage-11-lentille.js" defer></script>
+	<script src="JS/stage-11-lentille-1.js" defer></script>
+	<script src="JS/stage-11-lentille-2.js" defer></script>
+    <script src="JS/stage-12-trou-noir.js" defer></script>
+	<script src="JS/stage-12-trou-noir-1.js" defer></script>
+	<script src="JS/stage-12-trou-noir-2.js" defer></script>
+	<script src="JS/stage-12-trou-noir-3.js" defer></script>
+	<script src="JS/stage-12-trou-noir-4.js" defer></script>
+    <script src="JS/stage-13-quantique.js" defer></script>
+	<script src="JS/stage-13-quantique-1.js" defer></script>
+    <script src="JS/stage-14-epilogue.js" defer></script>
+	<script src="JS/stage-14-epilogue-1.js" defer></script>
+</body>
+</html>
